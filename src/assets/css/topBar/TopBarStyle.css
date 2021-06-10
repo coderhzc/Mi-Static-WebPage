@@ -1,0 +1,40 @@
+/*TopBarItem*/
+@keyframes animationSearchEnter {  /*进入时的动画*/
+  to{
+    background-color:rgb(248, 113, 7);
+  }
+}
+@keyframes  animationSearchLeave{ /*离开时的动画*/
+  from{
+    background-color:rgb(248, 113, 7);
+  }
+  to{
+    background-color:#fff;
+  }
+}
+.center-item-div :hover{
+  animation-name: animationColorEnter;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+}
+@keyframes animationColorEnter {
+  to{
+    color:rgb(248, 113, 7);
+  }
+}
+/*TopBarDropDown*/
+
+/*@keyframes animationDropDown {*/
+/*  to{*/
+/*    !*transform: translate(100px);*!*/
+/*    background-color: red;*/
+/*  }*/
+/*}*/
+.fade-enter-active,
+.fade-leave-active{
+  transition:all .3s ease;
+}
+.fade-enter,
+.fade-leave-to{
+  transform: translate(0,-300px);
+}

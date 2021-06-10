@@ -1,0 +1,14 @@
+.transitionPullDown-enter-active,
+.transitionPullDown-leave-active{
+  transition:all .3s ease;
+}
+.transitionPullDown-enter,
+.transitionPullDown-leave-to{
+  transform: translate(0,-200px);
+ }
+/*.transitionShopCart-enter-to{*/
+/*  */
+/*}*/
+
+/*.transitionShopCart-leave{*/
+/*}*/
