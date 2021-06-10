@@ -1,5 +1,5 @@
 <template>
-  <div class="main-page">
+  <div>
     <main-nav-bar/>
     <main-top-bar/>
   </div>
@@ -18,6 +18,4 @@ export default {
 </script>
 
 <style scoped>
-.main-page{
-}
 </style>

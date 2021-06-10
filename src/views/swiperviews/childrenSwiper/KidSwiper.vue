@@ -1,20 +1,22 @@
 <template>
-  <m-swiper>
-    <m-swiper-item v-for="(item,index) in getSwiperData" :key="index">
-      <a href="">
+  <div>
+    <m-swiper>
+      <m-swiper-item v-for="(item,index) in getSwiperData" :key="index">
         <img :src="item.image" alt="">
-      </a>
-    </m-swiper-item>
-  </m-swiper>
+      </m-swiper-item>
+    </m-swiper>
+  </div>
 </template>
 
 <script>
+import SwiperDropDownLocation from "@/components/common/mSwiperDropDown/SwiperDropDownLocation";
 import {mSwiper,mSwiperItem} from "@/components/common/mSwiper/index";
 export default {
   name: "Swiper",
   components:{
     mSwiper,
-    mSwiperItem
+    mSwiperItem,
+    SwiperDropDownLocation
   },
   props:{
     getSwiperData:{

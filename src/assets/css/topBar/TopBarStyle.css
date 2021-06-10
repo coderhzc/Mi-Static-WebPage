@@ -32,7 +32,7 @@
 /*}*/
 .fade-enter-active,
 .fade-leave-active{
-  transition:all .3s ease;
+  transition:all .8s ease;
 }
 .fade-enter,
 .fade-leave-to{

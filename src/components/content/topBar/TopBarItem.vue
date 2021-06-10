@@ -34,22 +34,24 @@
 export default {
   name: "TopBarItem",
   props:{ //封装在HeadTopBar的数据
-    shopMessage:{
-      type:Object,
-      default(){
-        return{}
+    shopMessage: {
+      type: Object,
+      default() {
+        return {}
       }
     }
   },
   data(){
     return{
       saveSearchMessage:'',
+      searchN:0,
       searchImage:'',
       isSearchImage:false,
       animationColor:'',
     }
   },
-  created() {
+  mounted() {
+    this.goSearch()
   },
   methods:{
     searchEnter(){  //搜索框的动画以及v-show
@@ -66,6 +68,17 @@ export default {
     },
     itemLeave(){
       this.$bus.$emit('topBarBooleanFalse',false)
+    },
+    //SearchPlaceholder循环
+    goSearch(){
+      setInterval(() => {
+        // console.log(this.shopMessage.search[this.searchN]);
+        this.saveSearchMessage = this.shopMessage.search[this.searchN]
+        this.searchN++
+        if (this.searchN>this.shopMessage.search.length-1){
+          this.searchN = 0
+        }
+      },4000)
     }
   }
 }

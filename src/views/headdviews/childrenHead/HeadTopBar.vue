@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <top-bar class="top-bar">
+  <div class="top-bar">
+    <top-bar>
       <top-bar-item class="top-bar-item" :shop-message="centerItem"/>
       <top-bar-drop-down class="top-bar-drop-down" :drop-down-shop="centerItem.shop"/>
     </top-bar>
