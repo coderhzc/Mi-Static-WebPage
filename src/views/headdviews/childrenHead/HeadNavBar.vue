@@ -45,7 +45,7 @@ export default {
   },
   data(){
     return{
-      leftItem:["小米商城","MIUI","loT","云服务","天星数科","有品","小爱开放平台","企业团购","资质证照","协议规则","下载app","智能生活",],
+      leftItem:["小米商城","MIUI","loT","云服务","天星数科","有品","小爱开放平台","企业团购","资质证照","协议规则","下载app","智能生活","Select Location",],
       rightItem:["登录","注册","消息通知"],
       isApp:false,
       currentIndex:10,
@@ -87,12 +87,14 @@ export default {
 .left{
   display: flex;
   height: 20px;
-  margin-left: 30px;
+  margin-left: 20px;
   margin-top: 10px;
 }
 .left-div{
-  padding: 0 10px;
+  padding: 0 7px;
   line-height: 20px;
+}
+.left-div:not(:last-child){
   border-right: 1px solid rgba(194,194,194,.1);
 }
 .center{
@@ -100,7 +102,6 @@ export default {
   justify-content: flex-end;
   height: 20px;
   margin-top: 10px;
-  margin-right: 20px;
 }
 .center-div{
   line-height: 20px;
@@ -112,7 +113,7 @@ export default {
 .right-div{
   position: relative;
   width: 120px;
-  margin-left: 25px;
+  margin-left: 15px;
   height: 40px;
   background-color: rgba(194,194,194,.1);
 }

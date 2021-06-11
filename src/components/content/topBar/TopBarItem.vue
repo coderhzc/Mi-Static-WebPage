@@ -72,7 +72,6 @@ export default {
     //SearchPlaceholder循环
     goSearch(){
       setInterval(() => {
-        // console.log(this.shopMessage.search[this.searchN]);
         this.saveSearchMessage = this.shopMessage.search[this.searchN]
         this.searchN++
         if (this.searchN>this.shopMessage.search.length-1){
@@ -130,14 +129,15 @@ export default {
   top: 50%;
   left: 50%;
   margin-top: -25px;
-  margin-left: -39%;
+  margin-left: -37%;
   width: 80%;
   height: 50%;
 }
 .search-inside{
   height: 100%;
   width: 80%;
-  border: 1px solid rgba(194,194,194,.3);
+  padding: 4px 10px;
+  border: 1px solid rgba(194,194,194,.5);
 }
 .search-img{
   position: absolute;
@@ -146,9 +146,9 @@ export default {
   width: 20%;
   height: 100%;
   background-color: #fff;
-  border-right: 1px solid rgba(194,194,194,.3);
-  border-top: 1px solid rgba(194,194,194,.3);
-  border-bottom: 1px solid rgba(194,194,194,.3);
+  border-right: 1px solid rgba(194,194,194,.5);
+  border-top: 1px solid rgba(194,194,194,.5);
+  border-bottom: 1px solid rgba(194,194,194,.5);
 }
 .search-img-img {
   position: absolute;

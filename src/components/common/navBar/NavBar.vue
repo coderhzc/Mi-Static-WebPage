@@ -33,9 +33,9 @@ export default {
   flex: 1;
 }
 .center{
-  width: 300px;
+  width: 250px;
 }
 .right{
-  width: 180px;
+  width: 165px;
 }
 </style>

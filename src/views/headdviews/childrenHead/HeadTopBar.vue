@@ -24,7 +24,7 @@ export default {
       centerItem: {
         image: "http://s02.mifile.cn/assets/static/image/logo-mi2.png",
         item: ["小米手机", "Redmi手机", "电视", "笔记本", "家电", "路由器", "智能硬件", "服务", "社区",],
-        search: ["手机", "以旧换新", "空调", "家电", "电视"],
+        search: ["手机", "【以旧换新】高额补贴", "空调","空气净化器","家电", "电视","618夏日入新活动"],
         shop: {
           0: {
             0: {

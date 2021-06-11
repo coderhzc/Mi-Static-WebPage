@@ -41,7 +41,6 @@ export default {
       //通过事件总线接收TopBarWord的index
      this.$bus.$on("topBarEmit",(msg)=>{
       this.currentIndex = msg
-       console.log(this.currentIndex);
      })//返回Boolean是否展示
     this.$bus.$on('topBarBooleanTrue',(msg)=>{
       if(this.currentIndex<7){       //只有小于7的内容才会被展示
@@ -70,7 +69,6 @@ export default {
   flex: 1;
   height: 110px;
   margin-top: 30px;
-  /*border: 1px solid black;*/
   text-align: center;
 }
 .drop-down-layout:not(:last-child){
