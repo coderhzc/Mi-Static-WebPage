@@ -84,7 +84,7 @@ export default {
 </script>
 
 <style scoped>
-@import "~assets/css/topBar/TopBarStyle.css";
+@import "./css/TopBarStyle.css";
 .top-bar-item{
   display: flex;
   background-color: #fff;
