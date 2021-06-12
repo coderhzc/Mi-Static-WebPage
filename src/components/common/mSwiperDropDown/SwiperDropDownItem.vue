@@ -102,7 +102,7 @@ export default {
 </script>
 
 <style scoped>
-@import "~assets/css/swiperAnimation/SwiperAnimation.css";
+@import "./css/SwiperAnimation.css";
 .box-layout{
   position: absolute;
   top: 0;
