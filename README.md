@@ -24,22 +24,22 @@ coderhzc
 
 emile:1437620263@qq.com / zeqi15989@gamil.com
 
-###Edition
+### Edition
 
-#####V1.0.0 
+##### V1.0.0 
 
 UpData:NavBar,TopBar
 
 Optimize:App-QR code DropDown Animation,Shopping Cart DropDown Animation.
 
-####1.0.1
+#### 1.0.1
 
 UpData:Swiper,SwiperDropDown
 
 Optimize:Drop down menu cannot show animation and cannot hide animation without 
  moving it into the box.
 
-####1.0.2
+#### 1.0.2
 
 UpData:MoreIntroduce
 
