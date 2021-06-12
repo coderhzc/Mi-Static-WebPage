@@ -61,15 +61,13 @@
 <script>
 import HeadView from "@/views/head/headdviews/HeadView";
 import SwiperView from "@/views/head/swiperviews/SwiperView";
-import MoreIntroduce from "@/views/body/introduceBar/childrenMoreIntroduce/MoreIntroduce";
-import BodyView from "@/views/body/introduceBar/BodyView";
+import BodyView from "@/views/body/introduceBar/MoreIntroduceView";
 export default {
   name: "MainPage",
   components:{
     BodyView,
     HeadView,
     SwiperView,
-    MoreIntroduce
   }
 }
 </script>
