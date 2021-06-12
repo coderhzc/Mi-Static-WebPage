@@ -2,11 +2,13 @@
   <transition name="fade">
     <div class="drop-down" v-show="isBoolean" @mouseenter="isBooleanEnter" @mouseleave="isBooleanLeave">
     <div class="drop-down-layout" v-for="(item,index) in dropDownShop[this.currentIndex]" :key="index">
-      <div><a href="#"><img :src="item.shopImage" alt=""></a></div>
-      <div class="drop-down-message">
+      <a :href="index">
+        <div><img :src="item.shopImage" alt=""></div>
+        <div class="drop-down-message">
         <div><span>{{item.shopName}}</span></div>
         <div style="color:rgb(248, 113, 7)"><span>{{item.shopPrice}}</span></div>
-      </div>
+        </div>
+      </a>
     </div>
   </div>
   </transition>
@@ -31,7 +33,11 @@ export default {
   },
   methods:{
     isBooleanEnter(){
-      this.isBoolean = true
+      if (Object.keys(this.dropDownShop[this.currentIndex]).length !== null){
+        this.isBoolean = true
+      }else{
+        this.isBoolean = false
+      }
     },
     isBooleanLeave(){
       this.isBoolean = false
@@ -50,14 +56,14 @@ export default {
       }
     })
     this.$bus.$on("topBarBooleanFalse",(msg)=>{
-      this.isBoolean = msg
+
     })
   }
 }
 </script>
 
 <style scoped>
-@import "~assets/css/topBar/TopBarStyle.css";
+@import "./css/TopBarStyle.css";
 .drop-down{
   height: 200px;
   display: flex;
