@@ -2,6 +2,7 @@
   <div>
     <head-view/>
     <swiper-view/>
+    <body-introduce-bar/>
     <ul>
       <li>111</li>
       <li>112</li>
@@ -58,13 +59,17 @@
 </template>
 
 <script>
-import HeadView from "@/views/headdviews/HeadView";
-import SwiperView from "@/views/swiperviews/SwiperView";
+import HeadView from "@/views/head/headdviews/HeadView";
+import SwiperView from "@/views/head/swiperviews/SwiperView";
+import MoreIntroduce from "@/views/body/introduceBar/childrenMoreIntroduce/MoreIntroduce";
+import BodyIntroduceBar from "@/views/body/introduceBar/BodyIntroduceBar";
 export default {
   name: "MainPage",
   components:{
+    BodyIntroduceBar,
     HeadView,
-    SwiperView
+    SwiperView,
+    MoreIntroduce
   }
 }
 </script>
