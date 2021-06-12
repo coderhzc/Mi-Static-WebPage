@@ -62,7 +62,7 @@ export default {
         this.dropDownBox = 'width:81%'
       }
       else if(this.n>12){
-        this.dropDownBox = 'width:58%'
+        this.dropDownBox = 'width:63%'
       }else {
         this.dropDownBox = 'width:40%'
       }
@@ -77,7 +77,7 @@ export default {
         this.dropDownBox = 'width:81%'
       }
       else if(this.n>12){
-        this.dropDownBox = 'width:58%'
+        this.dropDownBox = 'width:63%'
       }else {
         this.dropDownBox = 'width:40%'
       }
@@ -173,7 +173,7 @@ export default {
 }
 .drop-down-content span{
   position: absolute;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 45px;
   margin-left: 10px;
 }
