@@ -47,7 +47,11 @@ Optimize:Resolve errors that cannot be displayed.
 
 ### 1.0.3
 
-UpData:ShowShopDetail
+UpData:ShowShopDetail,The page adapter
+
+### 1.0.4
+
+UpData:footer
 
 
 
