@@ -83,6 +83,7 @@ export default {
 }
 .main-nav-bar{
   color: #ababab;
+  font-size: 12px;
 }
 .left{
   display: flex;
@@ -137,7 +138,7 @@ export default {
 .app{
   position: absolute;
   top: 40px;
-  left: 625px;
+  left: 550px;
   z-index: 8;
 }
 .app-div{
@@ -153,7 +154,7 @@ export default {
 }
 .shop-cart{
   position: absolute;
-  right: 45px;
+  right: 30px;
   width: 340px;
   height: 100px;
   background-color: #fff;
