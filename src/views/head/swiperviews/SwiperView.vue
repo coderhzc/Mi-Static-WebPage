@@ -1,9 +1,10 @@
 <template>
   <div class="swiper-view">
     <div>
-      <kid-swiper  :get-swiper-data="SwiperImages">
+      <kid-swiper :get-swiper-data="SwiperImages">
       </kid-swiper>
       <swiper-drop-down/>
+      <swiper-control/>
     </div>
   </div>
 </template>
@@ -11,11 +12,13 @@
 <script>
 import KidSwiper from "@/views/head/swiperviews/childrenSwiper/KidSwiper";
 import SwiperDropDown from "@/views/head/swiperviews/childrenSwiper/SwiperDropDown";
+import SwiperControl from "@/views/head/swiperviews/childrenSwiper/SwiperControl";
 export default {
   name: "Swiper",
   components:{
     KidSwiper,
     SwiperDropDown,
+    SwiperControl
   },
   data(){
     return {
@@ -47,4 +50,5 @@ export default {
   position: relative;
   margin: 0px 30px;
 }
+
 </style>
