@@ -85,5 +85,6 @@ export default {
 }
 .drop-down-message{
   line-height: 25px;
+  font-size: 12px;
 }
 </style>
