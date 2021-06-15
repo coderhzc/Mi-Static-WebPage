@@ -13,7 +13,7 @@
       </ul>
     </div>
       <div class="more-introduce-for" v-for="(item,index) in getMoreIntroduceItem" :key="index"
-      :class="{active:saveIndex===index}" @mouseenter="introduceEnter(index)" @mouseleave="introduceLeave">
+      :class="{activeEnter:saveIndex===index,activeLeave:saveIndex!==index}" @mouseenter="introduceEnter(index)" @mouseleave="introduceLeave">
         <a :href="index">
           <div class="more-introduce-img">
             <img :src="item.img" alt="">
@@ -43,13 +43,9 @@ export default {
       }
     }
   },
-  created() {
-    console.log(this.getMoreIntroduceItem);
-  },
   methods:{
     introduceEnter(index){
       this.saveIndex = index
-      console.log(this.saveIndex);
     },
     introduceLeave(){
       this.saveIndex = null
@@ -78,7 +74,7 @@ export default {
   height: 25px;
 }
 .more-introduce-name{
-  font-size: .5rem;
+  font-size: 12px;
   line-height: 20px;
   color: #ffffff;
 }
@@ -113,7 +109,14 @@ export default {
   height: 50px;
   border-right: 1px solid rgba(194,194,194,.2);
 }
-.active{
-  opacity: 1;
+.activeEnter{
+  animation-name: animationMoreIntroduceEnter;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+.activeLeave{
+  animation-name: animationMoreIntroduceLeave;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
 }
 </style>
