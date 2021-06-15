@@ -1,12 +1,17 @@
-.more-introduce-for :hover{
-  animation-name: animationMoreIntroduce;
-  animation-duration: .3s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes animationMoreIntroduce {
+@keyframes animationMoreIntroduceEnter {
+  from{
+    opacity: .5;
+  }
   to{
     opacity: 1;
+  }
+}
+@keyframes animationMoreIntroduceLeave {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: .5;
   }
 }
 
