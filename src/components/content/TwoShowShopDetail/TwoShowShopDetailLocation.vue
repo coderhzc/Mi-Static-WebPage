@@ -1,5 +1,5 @@
 <template>
-  <div class="two-show-shop-detail-location-box">
+  <div class="show-shop-detail-location-box">
     <div class="top">
       <slot name="top"></slot>
     </div>
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style scoped>
-.two-show-shop-detail-location-box{
+.show-shop-detail-location-box{
   width: 97%;
   height: 100%;
   margin: auto;
