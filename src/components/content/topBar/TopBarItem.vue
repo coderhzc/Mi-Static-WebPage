@@ -119,7 +119,7 @@ export default {
   justify-content: center;
   margin-top: 25px;;
   line-height: 60px;
-  font-size: 1.7rem;
+  font-size: 15px;
 }
 .center-item-div{
   padding: 0px 8px;
@@ -160,6 +160,7 @@ export default {
   height: 20px;
 }
 .search-input{
+  font-size: 12px;
   height: 100%;
   width: 100%;
   border: none;
