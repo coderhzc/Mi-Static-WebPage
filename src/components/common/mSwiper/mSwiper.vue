@@ -204,15 +204,15 @@ export default {
   width: 9px;
   height: 9px;
   border-radius: 4px;
-  background-color: rgba(106, 105, 105, 0.8);
-  border: 2px solid rgba(219, 219, 219, 0.5);
+  background-color: rgba(0,0,0,.4);
+  border: 2px solid hsla(0,0%,100%,.3);
   line-height: 8px;
   text-align: center;
   font-size: 12px;
   margin: 0 5px;
 }
 .indi-item.active {
-  background-color: rgb(236, 234, 234);
-  border: 2px solid rgba(239,239,239,1);
+  background-color: rgb(250,250,250);
+  border: 2px solid rgba(0,0,0,.4);
 }
 </style>
