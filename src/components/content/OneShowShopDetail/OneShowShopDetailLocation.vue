@@ -30,10 +30,12 @@ export default {
   height: 40px;
 }
 .bottom{
+  position: relative;
   width: 100%;
   height: 77%;
 }
 .advertisement{
+  position: relative;
   width: 100%;
   height: 14.5%;
 }
