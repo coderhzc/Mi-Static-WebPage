@@ -1,5 +1,5 @@
 <template>
-  <div class="two-shop-detail-box">
+  <div class="shop-detail-box">
     <two-show-shop-detail-location>
       <div slot="top">
         <div class="top-left-span">
@@ -15,12 +15,12 @@
         </div>
       </div>
       <div slot="bottom">
-        <two-show-shop-detail-item :get-two-shop-detail-item-data="twoShopDetailItemData"/>
+        <two-show-shop-detail-item :get-shop-detail-item-data="TwoShopDetailItemData"/>
       </div>
       <div slot="advertisement">
           <div class="advertisement-box-img">
             <a href="#">
-            <img :src="twoShopDetailItemData.advertisement.img" alt="">
+            <img :src="TwoShopDetailItemData.advertisement.img" alt="">
             </a>
           </div>
       </div>
@@ -32,15 +32,15 @@
 import TwoShowShopDetailLocation from "@/components/content/TwoShowShopDetail/TwoShowShopDetailLocation";
 import TwoShowShopDetailItem from "@/components/content/TwoShowShopDetail/TwoShowShopDetailItem";
 export default {
-  name: "TwoShopDetail",
+  name: "ShopDetail",
   components:{
     TwoShowShopDetailLocation,
-    TwoShowShopDetailItem
+    TwoShowShopDetailItem,
   },
   data(){
     return{
       isChoose:0,
-      twoShopDetailItemData:{
+      TwoShopDetailItemData:{
         left:{
           0:{
             img:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/116fc43816b87192be4e67cf762e8da5.jpeg?thumb=1&w=234&h=300&f=webp&q=90'
@@ -185,7 +185,7 @@ export default {
 
 <style scoped>
 @import "~components/content/TwoShowShopDetail/css/TwoShowShopDetailAnimation.css";
-.two-shop-detail-box{
+.shop-detail-box{
   width: 100%;
   height: 890px;
 }
