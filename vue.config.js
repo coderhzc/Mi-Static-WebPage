@@ -9,6 +9,18 @@ module.exports = {
         'network': '@/network',
       }
     }
+  },
+  css: {
+    loaderOptions: {
+      css: {},
+      postcss: {
+        plugins: [
+          require('postcss-px2rem')({
+            remUnit: 128
+          })
+        ]
+      }
+    }
   }
 }
 
