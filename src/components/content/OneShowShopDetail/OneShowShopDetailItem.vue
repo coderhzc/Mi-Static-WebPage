@@ -48,9 +48,6 @@ export default {
       }
     }
   },
-  created() {
-    console.log(this.getShopDetailItemData);
-  },
   methods:{
     isLeftShopEnter(){
       this.isLeftShopStyle = 'animation-name:LeftShopDetailEnter;animation-duration:.5s;animation-fill-mode:forwards'
