@@ -1,8 +1,15 @@
 <template>
   <div>
+    <!-- head -->
     <head-view/>
     <swiper-view/>
     <body-view/>
+    <!--  body  -->
+    <div class="body-base-style">
+      <swiper-limit-goods-view/>
+      <shop-detail-view/>
+    </div>
+    <!-- footer -->
     <ul>
       <li>111</li>
       <li>112</li>
@@ -62,16 +69,25 @@
 import HeadView from "@/views/head/headdviews/HeadView";
 import SwiperView from "@/views/head/swiperviews/SwiperView";
 import BodyView from "@/views/body/introduceBar/MoreIntroduceView";
+import SwiperLimitGoodsView from "@/views/body/swiperLimitGoods/SwiperLimitGoodsView";
+import ShopDetailView from "@/views/body/shopDetail/ShopDetailView";
 export default {
   name: "MainPage",
   components:{
     BodyView,
     HeadView,
     SwiperView,
+    SwiperLimitGoodsView,
+    ShopDetailView
   }
 }
 </script>
 
 <style scoped>
-
+.body-base-style{
+  width: 100%;
+  height: 3000px;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+}
 </style>
