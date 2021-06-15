@@ -108,6 +108,7 @@ export default {
   top: 0;
   width: 100%;
   height: 99.5%;
+  z-index: 3;
 }
 .item-div{
   position: absolute;
@@ -129,7 +130,8 @@ export default {
   margin: auto;
 }
 .content-item span{
-  font-size: 1.3rem;
+  font-size: 15px;
+  font-weight: 300;
   color: #fff;
 }
 .content-item img{
@@ -173,7 +175,7 @@ export default {
 }
 .drop-down-content span{
   position: absolute;
-  font-size: 1.2rem;
+  font-size: 12px;
   line-height: 45px;
   margin-left: 10px;
 }
