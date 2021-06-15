@@ -1,14 +1,17 @@
 <template>
   <div class="shop-detail-item-box">
     <div class="left-shop-detail-item">
-      <div class="left-shop-detail-item-img" v-for="(item,index) in getTwoShopDetailItemData.left" :key="index"
-      :class="{active:index === saveLeftTwoItemIndex,unactive:index !== saveLeftTwoItemIndex}" @mouseenter="LeftTwoShopDetailItemEnter(index)" @mouseleave="LeftTwoShopDetailItemLeave" >
-        <img :src="item.img" alt="">
+      <div class="left-shop-detail-item-img" v-for="(item,index) in getShopDetailItemData.left" :key="index"
+      :class="{active:index === saveLeftItemIndex,unactive:index !== saveLeftItemIndex}" @mouseenter="LeftShopDetailItemEnter(index)" @mouseleave="LeftShopDetailItemLeave" >
+        <a href="#">
+          <img :src="item.img" alt="">
+        </a>
       </div>
     </div>
     <div class="right-shop-detail-item">
-      <div class="right-shop-detail-item-box" v-for="(item,index) in getTwoShopDetailItemData.right[saveTwoPage]" :key="index"
-      :class="{active:index === saveRightTwoItemIndex,unactive:index !== saveRightTwoItemIndex}" @mouseenter="RightTwoShopDetailItemEnter(index)" @mouseleave="RightTwoShopDetailItemLeave">
+      <div class="right-shop-detail-item-box" v-for="(item,index) in getShopDetailItemData.right[savePage]" :key="index"
+      :class="{active:index === saveRightItemIndex,unactive:index !== saveRightItemIndex}" @mouseenter="RightShopDetailItemEnter(index)" @mouseleave="RightShopDetailItemLeave">
+        <a href="#">
         <div class="right-touch-box">
           <div class="right-shop-detail-img">
             <img :src="item.img" alt="">
@@ -24,6 +27,7 @@
             <span class="oldprice">{{item.oldprice}}</span>
           </div>
         </div>
+        </a>
       </div>
     </div>
   </div>
@@ -33,7 +37,7 @@
 export default {
   name: "TwoShowShopDetailItem",
   props:{
-    getTwoShopDetailItemData:{
+    getShopDetailItemData:{
       type:Object,
       default(){
         return{}
@@ -42,9 +46,9 @@ export default {
   },
   data(){
     return{
-      saveTwoPage:0,
-      saveLeftTwoItemIndex:null,
-      saveRightTwoItemIndex:null,
+      savePage:0,
+      saveLeftItemIndex:null,
+      saveRightItemIndex:null,
     }
   },
   created() {
@@ -53,23 +57,24 @@ export default {
   methods:{
     getHotClick(){
       this.$bus.$on('hotClick',res=>{
-        this.saveTwoPage = res
+        this.savePage = res
       })
-      this.$bus.$on('moviesClick',res=>{
-        this.saveTwoPage = res
+      this.$bus.$on('moviesClick',res => {
+        this.savePage = res
       })
+
     },
-    LeftTwoShopDetailItemEnter(index){
-      this.saveLeftTwoItemIndex = index
+    LeftShopDetailItemEnter(index){
+      this.saveLeftItemIndex = index
     },
-    LeftTwoShopDetailItemLeave(){
-      this.saveLeftTwoItemIndex = null
+    LeftShopDetailItemLeave(){
+      this.saveLeftItemIndex = null
     },
-    RightTwoShopDetailItemEnter(index){
-      this.saveRightTwoItemIndex = index
+    RightShopDetailItemEnter(index){
+      this.saveRightItemIndex = index
     },
-    RightTwoShopDetailItemLeave(){
-      this.saveRightTwoItemIndex = null
+    RightShopDetailItemLeave(){
+      this.saveRightItemIndex = null
     }
   }
 }
@@ -151,7 +156,7 @@ export default {
 }
 .active{
   transition: all .3s ease;
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: 0 8px 8px rgb(194,194,194);
 }
 .unactive{
