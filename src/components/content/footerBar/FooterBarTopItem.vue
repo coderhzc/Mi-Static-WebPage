@@ -63,4 +63,5 @@ export default {
   transition: all .3s ease;
   color: #010101;
 }
+/**/
 </style>
