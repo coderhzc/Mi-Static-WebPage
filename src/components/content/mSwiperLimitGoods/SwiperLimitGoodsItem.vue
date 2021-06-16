@@ -142,4 +142,5 @@ export default {
   text-decoration:line-through;
   color: #b0b0b0;
 }
+/**/
 </style>
