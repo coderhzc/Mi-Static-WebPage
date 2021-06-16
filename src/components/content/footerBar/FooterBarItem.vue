@@ -121,4 +121,5 @@ export default {
 .left-table td:hover{
   color: #ff6709;
 }
+/**/
 </style>
