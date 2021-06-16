@@ -215,4 +215,5 @@ export default {
   background-color: rgb(250,250,250);
   border: 2px solid rgba(0,0,0,.4);
 }
+/**/
 </style>
