@@ -32,9 +32,11 @@
 /*}*/
 .fade-enter-active,
 .fade-leave-active{
-  transition:all .8s ease;
+  transition:all .7s ease;
 }
-.fade-enter,
+.fade-enter{
+  transform: translateY(-330px);
+}
 .fade-leave-to{
-  transform: translate(0,-300px);
+  transform: translateY(-330px);
 }
