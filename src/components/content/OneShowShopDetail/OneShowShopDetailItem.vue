@@ -140,4 +140,5 @@ export default {
   transform: translateY(0);
   transition: all .3s ease;
 }
+/**/
 </style>
