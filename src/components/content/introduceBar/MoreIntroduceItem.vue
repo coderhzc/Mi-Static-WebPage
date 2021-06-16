@@ -119,4 +119,5 @@ export default {
   animation-duration: .5s;
   animation-fill-mode: forwards;
 }
+/**/
 </style>
