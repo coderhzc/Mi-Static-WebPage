@@ -18,4 +18,5 @@ export default {
   padding-left:22px;
   height: 185px;
 }
+/**/
 </style>
