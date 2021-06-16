@@ -28,4 +28,5 @@ export default {
   height: 91%;
   margin: 8px;
 }
+/**/
 </style>
