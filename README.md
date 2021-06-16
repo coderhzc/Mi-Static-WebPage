@@ -53,7 +53,6 @@ UpData:ShowShopDetail,The page adapter
 
 UpData:footer
 
-###
 
 
 
