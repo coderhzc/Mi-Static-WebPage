@@ -54,4 +54,5 @@ export default {
   width: 18px;
   height: 18px;
 }
+/**/
 </style>
