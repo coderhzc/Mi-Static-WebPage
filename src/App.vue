@@ -17,3 +17,4 @@ import MainPage from "@/views/mainPage/MainPage";
 <style>
 @import "assets/css/base.css";
 </style>
+<!---->
