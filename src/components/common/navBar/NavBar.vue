@@ -38,4 +38,5 @@ export default {
 .right{
   width: 165px;
 }
+/**/
 </style>
